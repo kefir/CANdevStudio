@@ -58,7 +58,7 @@ private:
     ComponentInterface::ComponentProperties _supportedProps = {
             std::make_tuple(_nameProperty,  QVariant::String, true, cf(nullptr)),
             std::make_tuple(_fileProperty, QVariant::String, true, cf([] { return new PropertyFieldPath; } )),
-            std::make_tuple(_colorProperty, QVariant::String, true, cf([] { return new PropertyFieldColor; } ))
+            // std::make_tuple(_colorProperty, QVariant::String, true, cf([] { return new PropertyFieldColor; } ))
     };
     // clang-format on
 
